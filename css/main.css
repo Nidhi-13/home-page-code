@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root {
+  --lg-font: 'Cinzel', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --pink: #e5345b;
+  --black: #212529;
+  --white: #ffffff;
+  --light-grey: rgb(210, 210, 210);
+  --grey: ;
+  /* --pink: #00a7e1; */
+}
+body {
+  font-family: var(--sm-font);
+}
+/* buttons */
+.bg-primary {
+  background-color: var(--pink) !important;
+}
+.btn-pink-outline {
+  background: var(--white);
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+.btn-pink-outline:hover {
+  background: var(--pink);
+  color: var(--white);
+  border: 1px solid var(--pink);
+  transition: 0.4s linear;
+}
+.btn:not(.nav-btns button) {
+  background-color: #fff;
+  color: rgb(85, 85, 85);
+  padding: 0.6rem 1.75rem;
+  border-radius: 1.6rem;
+  border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover {
+  background-color: var(--pink);
+  color: var(--white);
+  border-color: var(--pink);
+}
+
+/* text color */
+.text-primary {
+  color: var(--pink) !important;
+}
+
+/* navbar */
+.navbar {
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+  width: 1.875rem;
+}
+.navbar-brand span {
+  letter-spacing: 0.125rem;
+  font-family: var(--lg-font);
+}
+.nav-link:hover {
+  color: var(--pink) !important;
+}
+
+/* header */
+#header {
+  background: url(../images/banner-1.jpg) center/cover no-repeat;
+}
+
+.carousel-inner h1 {
+  font-size: 3.75rem;
+  font-family: var(--lg-font);
+  color: #05ffc1 !important;
+}
+.carousel-inner h2 {
+  font-weight: 200;
+  letter-spacing: 0.12rem;
+}
+.carousel-item {
+  bottom: 5rem;
+}
+.carousel-item .btn {
+  border-color: var(--white) !important;
+}
+.carousel-item .btn:hover {
+  border-color: var(--pink) !important;
+}
+
+/* title */
+.title h2::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+  background-color: var(--pink) !important;
+  color: var(--white) !important;
+  border-color: var(--pink) !important;
+}
+.filter-button-group .btn:hover {
+  color: var(--white) !important;
+}
+.collection-img span {
+  top: 20px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+/* discount banner (offers) */
+#offers {
+  background: url(../images/discount-banner.jpg) bottom/cover no-repeat;
+}
+#offers .row {
+  min-height: 60vh;
+}
+.offers-content span {
+  color: rgb(85, 85, 85);
+  font-size: 1.75rem;
+}
+.offers-content h2 {
+  font-size: 3.75rem;
+  color: var(--pink) !important;
+  font-family: var(--lg-font);
+}
+.offers-content .btn {
+  color: rgb(85, 85, 85) !important;
+  background-color: transparent !important;
+  border-color: rgb(85, 85, 85) !important;
+}
+.offers-content .btn:hover {
+  color: white !important;
+  background-color: var(--pink) !important;
+  border-color: var(--pink) !important;
+}
+/* featured */
+.text-grey {
+  color: var(--light-grey);
+}
+/********** FOOTER ***********/
+footer .brand {
+  font-size: 1.125rem;
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--pink) !important;
+}
